@@ -1,0 +1,109 @@
+﻿html {
+  background-color: #ffb400; }
+
+body {
+  padding: 0 5%;
+  margin: 3em auto;
+  max-width: 800px;
+  font-family: 'SrcSans', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333; }
+
+.btf {
+  opacity: 0; }
+
+::-webkit-scrollbar {
+  width: 0.8em; }
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2); }
+
+::-webkit-scrollbar-thumb {
+  background: #fff; }
+  ::-webkit-scrollbar-thumb:active {
+    background: #333; }
+
+p.bigger {
+  font-size: 1.5em; }
+
+a {
+  color: #333;
+  outline: none;
+  border: none;
+  text-decoration: none; }
+
+.icon {
+  font-family: 'JSORG';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.hf {
+  margin: 1em -4px;
+  border-collapse: separate;
+  border-spacing: 4px;
+  color: #fff; }
+  .hf a {
+    color: #fff; }
+  .hf td {
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0; }
+    .hf td.hr {
+      border-top: 2px solid #fff; }
+  .hf .logo {
+    width: 100%;
+    font-size: 4em; }
+    .hf .logo span {
+      padding-left: 4px; }
+    .hf .logo.small {
+      font-size: 1.25em; }
+      .hf .logo.small span {
+        display: inline-block;
+        line-height: 0;
+        font-size: 2em;
+        padding-left: 2px; }
+  .hf .fb, .hf .tw, .hf .gp, .hf .gh {
+    display: block;
+    width: 2em;
+    line-height: 2em;
+    text-align: center; }
+  .hf .fb {
+    background: #3c5a98; }
+  .hf .tw {
+    background: #54a3db; }
+  .hf .gp {
+    background: #de4b3b; }
+  .hf .gh {
+    min-width: 60px;
+    line-height: 1.25em;
+    width: auto;
+    white-space: nowrap;
+    background: #fff;
+    color: #ffb400; }
+    .hf .gh span {
+      display: none;
+      padding-left: 0.4em;
+      font-family: 'SrcCode', 'Courier New', Courier, monospace;
+      font-weight: 700;
+      vertical-align: top; }
+  .hf h1 {
+    font-family: 'SrcSerif', Georgia, Times, serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0; }
+  .hf .at {
+    font-size: 0.8em; }
+    .hf .at span {
+      float: right; }
+
+/*# sourceMappingURL=main.css.map */

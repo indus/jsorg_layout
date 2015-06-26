@@ -1,0 +1,409 @@
+﻿@import "variables";
+
+html.no-js, html.ie8 {
+    background: url('background.png') $cBg repeat-y fixed;
+}
+
+html {
+    background: url('../background.png') $cBg repeat-y fixed;
+}
+
+::selection {
+    color: $cBg;
+    background: $cTxt;
+}
+
+.btf {
+    opacity: 1;
+}
+
+a:hover {
+    color: rgba($cTxt, .25);
+}
+
+.hf {
+
+    .logo {
+        a:hover {
+            color: rgba($cTxt, .25);
+        }
+    }
+
+    a {
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .fb, .tw, .gp, .gh {
+
+        &:hover {
+            background: $cKey;
+        }
+    }
+
+    .fb:hover {
+        color: $cFb;
+    }
+
+    .tw:hover {
+        color: $cTw;
+    }
+
+    .gp:hover {
+        color: $cGp;
+    }
+
+    .gh:hover {
+        background: rgba($cTxt, .25);
+    }
+}
+
+
+
+
+
+#tbl {
+    margin: 2em -4px;
+    width: 100%;
+    width: calc(100% + 8px);
+    border-collapse: separate;
+    border-spacing: 4px;
+    table-layout: fixed;
+    font-family: 'SrcCode', 'Courier New', Courier, monospace;
+
+
+    &:before {
+        content: "";
+        position: fixed;
+        height: 28px;
+        top: -0px;
+        left: 0;
+        right: 0;
+        background: $cKey;
+        visibility: hidden;
+        z-index: 1;
+        border-bottom: 2px solid $cBg;
+    }
+
+    thead.afix {
+        top: 0;
+        margin-left: -4px;
+        z-index: 1;
+
+        th {
+            background: transparent;
+        }
+    }
+
+    thead.static {
+        display: none;
+    }
+
+    a, div {
+        color: inherit;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: $cKey;
+        -moz-transition: background .3s;
+        -o-transition: background .3s;
+        -webkit-transition: background .3s;
+        transition: background .3s;
+
+        label {
+            display: inline-block;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            right: 4px;
+            bottom: 4px;
+            border: 2px solid $cTxt;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba($cTxt, .5);
+            }
+        }
+    }
+
+
+    a:hover, a.active {
+        color: $cBg;
+        background: rgba($cTxt, .25);
+
+        label {
+            border-color: $cBg;
+        }
+    }
+
+
+    th, td {
+        padding: 0;
+        line-height: 1.25em;
+        text-align: center;
+    }
+
+    td a {
+        white-space: nowrap;
+        vertical-align: middle;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+    th#thR {
+        width: 18%;
+    }
+
+    th#thD, th#thM, th#thW {
+        width: 100px;
+    }
+
+    th {
+        position: relative;
+        vertical-align: top;
+
+        &:first-child {
+            background: $cKey;
+        }
+    }
+
+
+    td {
+
+        &[data-p] {
+            background: rgba($cKey,1);
+        }
+
+        &[data-m] {
+            background: rgba($cTxt,.2);
+
+            &:before {
+                content: "-";
+            }
+        }
+    }
+
+    &.afix {
+        &:before {
+            visibility: visible;
+        }
+
+        thead.afix {
+            position: fixed;
+        }
+
+        thead.static {
+            display: table-header-group;
+            visibility: hidden;
+        }
+
+        a {
+            color: $cTxt;
+
+            label {
+                border-color: $cTxt;
+            }
+        }
+    }
+}
+
+
+
+html.ie8 label {
+    display: none !important;
+}
+
+
+input.switch {
+    position: fixed;
+    left: -99px;
+    opacity: 0;
+}
+
+:checked ~ #tbl {
+    thead th:first-child a:after,
+    th:first-child:after {
+        content: "";
+        float: right;
+        line-height: 12px;
+        font-size: 10px;
+        min-width: 36px;
+        margin: 4px;
+        padding: 0 2px;
+        color: $cKey;
+        background: $cTxt;
+        font-weight: 700;
+    }
+
+    thead th:first-child:after {
+        content: none;
+    }
+}
+
+#iP:checked ~ #tbl [for='iP'],
+#iD:checked ~ #tbl [for='iD'],
+#iW:checked ~ #tbl [for='iW'],
+#iM:checked ~ #tbl [for='iM'] {
+    background: $cTxt;
+    cursor: default;
+}
+
+#iP:checked ~ #tbl {
+    th:first-child a:after {
+        content: "POINTS";
+    }
+
+    th[data-pt]:after {
+        content: '~'attr(data-pt);
+    }
+}
+
+#iD:checked ~ #tbl {
+    thead th:first-child a:after {
+        content: "DAY";
+    }
+
+    th[data-p-d]:first-child:after {
+        content: '+'attr(data-p-d);
+        background: $cBg;
+        color: $cTxt;
+    }
+
+    th[data-m-d]:first-child:after {
+        content: '-'attr(data-m-d);
+        background: rgba($cTxt,.5);
+    }
+}
+
+#iW:checked ~ #tbl {
+    thead th:first-child a:after {
+        content: "WEEK";
+    }
+
+    th[data-p-w]:first-child:after {
+        content: '+'attr(data-p-w);
+        background: $cBg;
+        color: $cTxt;
+    }
+
+    th[data-m-w]:first-child:after {
+        content: '-'attr(data-m-w);
+        background: rgba($cTxt,.5);
+    }
+}
+
+#iM:checked ~ #tbl {
+    thead th:first-child a:after {
+        content: "MONTH";
+    }
+
+    th[data-p-m]:first-child:after {
+        content: '+'attr(data-p-m);
+        background: $cBg;
+        color: $cTxt;
+    }
+
+    th[data-m-m]:first-child:after {
+        content: '-'attr(data-m-m);
+        background: rgba($cTxt,.5);
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    #tbl {
+
+        th, td, a {
+            font-size: 10px;
+            line-height: 19px;
+            vertical-align: bottom !important;
+        }
+
+        th#thR {
+            width: 80px;
+        }
+
+        th#thD, th#thM, th#thW {
+            width: 70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #tbl {
+        border-spacing: 2px;
+        margin: 0 -2px;
+        width: 100%;
+        width: calc(100% + 4px);
+
+        &:before {
+            height: 24px;
+        }
+
+        thead.afix {
+            margin-left: -2px;
+        }
+
+        th:after, th a:after, label {
+            display: none !important;
+        }
+
+        th#thR, th#thD, th#thM, th#thW {
+            width: 38px;
+        }
+    }
+}
+
+
+
+/*
+#err404 {
+    text-align: center;
+
+    span {
+        font-size: 6em;
+        line-height: 1em;
+        font-weight: 700;
+    }
+}
+
+
+ul, ol {
+    padding: 0;
+    list-style-type: none;
+    color: $cTxt;
+
+    li {
+        background: $cKey;
+        margin: 20px 0;
+        padding: 10px 20px 20px 20px;
+    }
+
+    h3 {
+        min-width: 140px;
+        display: inline-block;
+        font-size: 3em;
+        line-height: .75em;
+        padding: 20px 20px 0 0;
+        margin: -10px 20px -20px 0;
+        border-right: 2px solid $cBg;
+        font-weight: 700;
+        color: $cBg;
+
+        a {
+            color: $cBg;
+
+            &:hover {
+                color: $cTxt;
+            }
+        }
+    }
+
+    li.comingsoon {
+        opacity: .3;
+    }
+}*/

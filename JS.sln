@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JS", "http://localhost:54922", "{3F7AB083-9B07-4DE6-91A2-F539A0ED4ABE}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54922"
+		Debug.AspNetCompiler.PhysicalPath = "..\JS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54922\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54922"
+		Release.AspNetCompiler.PhysicalPath = "..\JS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54922\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\JS\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "jekyll", "http://localhost:49681", "{F632E0F0-268B-44BD-84A1-8285B3878767}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49681"
+		Debug.AspNetCompiler.PhysicalPath = "..\jekyll\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49681\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49681"
+		Release.AspNetCompiler.PhysicalPath = "..\jekyll\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49681\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\jekyll\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "stats.js.org(1)", "http://localhost:50681", "{D4906C5B-DA2A-493D-9E20-096BD80D4D16}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50681"
+		Debug.AspNetCompiler.PhysicalPath = "..\stats.js.org\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50681\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50681"
+		Release.AspNetCompiler.PhysicalPath = "..\stats.js.org\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50681\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\stats.js.org\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7AB083-9B07-4DE6-91A2-F539A0ED4ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7AB083-9B07-4DE6-91A2-F539A0ED4ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F632E0F0-268B-44BD-84A1-8285B3878767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F632E0F0-268B-44BD-84A1-8285B3878767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4906C5B-DA2A-493D-9E20-096BD80D4D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4906C5B-DA2A-493D-9E20-096BD80D4D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
